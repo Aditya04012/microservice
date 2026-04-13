@@ -1,4 +1,4 @@
-OSERVICES BACKEND PROJECT
+MICROSERVICES BACKEND PROJECT
 ================================
 
 Project Type
@@ -43,43 +43,45 @@ FEATURES
 ====================================================
 PROJECT FOLDER STRUCTURE
 ====================================================
+```
 microservices/
-|
-|-- api_gateway/
-|   |-- main.py
-|   |-- run.bat
-|
-|-- user_service/
-|   |-- main.py
-|   |-- Database.py
-|   |-- run.bat
-|   |-- Models/
-|   |   |-- user_model.py
-|   |-- Routers/
-|       |-- user_router.py
-|
-|-- order_service/
-|   |-- main.py
-|   |-- Database.py
-|   |-- Models/
-|   |   |-- order_model.py
-|   |-- Routes/
-|       |-- order_router.py
-|
-|-- payment_service/
-|   |-- main.py
-|
-|-- inventory/
-|   |-- main.py
-|   |-- Database.py
-|   |-- Models/
-|   |   |-- inventory_model.py
-|   |-- Router/
-|       |-- inventory_router.py
-|
-|-- test.http
-|-- .vscode/
-|   |-- settings.json
+│
+├── api_gateway/
+│   ├── main.py
+│   └── run.bat
+│
+├── user_service/
+│   ├── main.py
+│   ├── Database.py
+│   ├── run.bat
+│   ├── Models/
+│   │   └── user_model.py
+│   └── Routers/
+│       └── user_router.py
+│
+├── order_service/
+│   ├── main.py
+│   ├── Database.py
+│   ├── Models/
+│   │   └── order_model.py
+│   └── Routes/
+│       └── order_router.py
+│
+├── payment_service/
+│   └── main.py
+│
+├── inventory/
+│   ├── main.py
+│   ├── Database.py
+│   ├── Models/
+│   │   └── inventory_model.py
+│   └── Router/
+│       └── inventory_router.py
+│
+├── test.http
+└── .vscode/
+    └── settings.json
+```
 
 ====================================================
 AUTHENTICATION
