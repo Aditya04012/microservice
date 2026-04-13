@@ -1,0 +1,55 @@
+
+
+### login
+POST http://localhost:8000/api/v1/users/login
+Content-Type: application/json
+
+{
+    "email":"adityabhatnagar391@gmail.com",
+    "password":"aditya"
+}
+
+###add_item
+
+POST http://localhost:8000/api/v1/inventory/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZGl0eWFiaGF0bmFnYXIzOTFAZ21haWwuY29tIiwiZXhwIjoxNzc1NTUxMjQwfQ.WfNw7pkZbf6E8NdmIlLZHRrZor2vLFIep_IwXeFtcQ8
+Content-Type: application/json
+
+{
+ "name": "Laptop",
+ "description": "Gaming Laptop",
+ "price": 80000,
+ "stock": 5,
+ "category": "electronics"
+}
+
+
+### Delete Product
+DELETE http://localhost:8000/api/v1/inventory/products/69ac10e753a4a6b9881f3fdc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZGl0eWFiaGF0bmFnYXIzOTFAZ21haWwuY29tIiwiZXhwIjoxNzc1NTUxMjQwfQ.WfNw7pkZbf6E8NdmIlLZHRrZor2vLFIep_IwXeFtcQ8
+Content-Type: application/json
+
+
+### orders
+
+POST http://localhost:8000/api/v1/orders/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZGl0eWFiaGF0bmFnYXIzOTFAZ21haWwuY29tIiwiZXhwIjoxNzc2MDcwNTI0fQ.KDrV9sLKznRXHnddWKeeVLDAk2wFy9zsVxB1ZIAJKlU
+Content-Type: application/json
+
+{
+ "product_id": "69b5247ae7c092e03309d223",
+ "quantity": 2
+}
+
+
+###Get orders all
+GET http://localhost:8000/api/v1/orders/my-order
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZGl0eWFiaGF0bmFnYXIzOTFAZ21haWwuY29tIiwiZXhwIjoxNzc2MDcwNTI0fQ.KDrV9sLKznRXHnddWKeeVLDAk2wFy9zsVxB1ZIAJKlU
+Content-Type: application/json
+
+
+
+###cancel
+PUT http://localhost:8000/api/v1/orders/69b52d8f9206c64b25633845/cancel
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZGl0eWFiaGF0bmFnYXIzOTFAZ21haWwuY29tIiwiZXhwIjoxNzc2MDcwNTI0fQ.KDrV9sLKznRXHnddWKeeVLDAk2wFy9zsVxB1ZIAJKlU
+Content-Type: application/json
